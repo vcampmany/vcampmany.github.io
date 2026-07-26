@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Victor Campmany — Computer Vision Engineer</title>
+  <meta name="description" content="Portfolio of computer vision engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="container topbar-inner" aria-label="Primary">
+      <a class="mark" href="#top"><span class="mark-box" aria-hidden="true"></span>Victor Campmany</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="hero-eyebrow">Computer Vision Engineer</p>
+        <h1>Hi, I'm Victor. I build systems that help <span class="bw" data-word>machines</span> <span class="bw" data-word>see.</span></h1>
+        <p class="bio">
+          I work on computer vision and software engineering projects. My focus is real-time
+          perception pipelines on edge and cloud platforms. I worked in a variety of projects
+          ranging from GPU algorithm optimization for embedded platforms to cloud-based Visual
+          Positioning Systems.
+        </p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-secondary" href="mailto:vcampmany@gmail.com">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-header rv">
+          <p class="section-eyebrow">Selected work</p>
+          <h2>Projects</h2>
+          <p class="project-description">
+            My favorite professional and hobby software projects
+            that trace my journey from my early career days to today.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <details class="project-item rv">
+            <summary class="project-row">
+              <div class="thumb-col">
+                <div class="frame">
+                  <div class="frame-media frame-placeholder">Project image placeholder</div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Computer Vision-based Bike Fitting Tool</h3>
+                <p>
+                  A tool that analyzes a cyclist's position on the bike from
+                  video using pose estimation, tracking joint angles at the
+                  knee, hip, and back through the pedal stroke. It compares
+                  these against biomechanical fit guidelines to suggest
+                  saddle height, reach, and cleat adjustments. While bike
+                  fitting is usually done with expensive motion-capture rigs
+                  and sensors, this approach only needs a phone camera.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">Pose Estimation</span>
+                  <span class="tag">Cycling</span>
+                </div>
+              </div>
+              <span class="project-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="project-panel">
+              <div class="panel-details">
+                <p>
+                  <a href="https://github.com/vcampmany/serin_bikefit" target="_blank" rel="noopener">View the source on GitHub ↗</a>
+                </p>
+                <!-- TODO: add a fuller write-up -->
+                <p>
+                  More detail on the approach, the pose-estimation model
+                  used, how the biomechanical guidelines were sourced, and
+                  example before/after fit recommendations goes here.
+                </p>
+                <p>
+                  Biomechanical fit guidelines are based on the book
+                  <a href="https://www.goodreads.com/book/show/60700168-bike-fit-2nd-edition" target="_blank" rel="noopener">Bike Fit (2nd Edition) by Phil Burt ↗</a>.
+                </p>
+              </div>
+              <!-- TODO: replace with real result videos/GIFs -->
+              <div class="panel-videos">
+                <div class="frame">
+                  <div class="frame-media frame-placeholder is-video">Demo video placeholder</div>
+                </div>
+                <div class="frame">
+                  <div class="frame-media frame-placeholder is-video">Demo video placeholder</div>
+                </div>
+              </div>
+              <!-- TODO: add real screenshots/photos of the tool in use -->
+              <div class="panel-grid">
+                <div class="frame">
+                  <div class="frame-media frame-placeholder">Image placeholder</div>
+                </div>
+                <div class="frame">
+                  <div class="frame-media frame-placeholder">Image placeholder</div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-item rv">
+            <summary class="project-row">
+              <div class="thumb-col">
+                <div class="frame">
+                  <div class="frame-media">
+                    <img src="assets/vps.png" alt="Visual Positioning System indoor localization" class="thumb-contain" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Visual Positioning System for Indoor Navigation</h3>
+                <p>
+                  A vision-only indoor positioning system built at aryve,
+                  delivering centimeter-precise localization using purely
+                  computer vision and image matching — no beacons, Wi-Fi, or
+                  other hardware required. I led the computer vision effort
+                  from the ground up and built the backend that powers this
+                  localization.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Image Matching</span>
+                  <span class="tag">Indoor Navigation</span>
+                  <span class="tag">Localization</span>
+                </div>
+              </div>
+              <span class="project-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="project-panel">
+              <div class="panel-details">
+                <p>
+                  The system matches live camera frames against a
+                  pre-built visual map of the indoor space, using feature
+                  matching to resolve the device's position to within a few
+                  centimeters — entirely from vision, with no additional
+                  positioning hardware.
+                </p>
+              </div>
+              <div class="panel-videos">
+                <div class="frame">
+                  <div class="frame-media panel-video">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/I2hg6eMP7cs"
+                      title="aryve Indoor Navigation Solution"
+                      loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="frame">
+                  <div class="frame-media panel-video">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/KbGOgeR9hdc"
+                      title="aryve Indoor Navigation Demo at Deutsches Museum | Magic Leap AR Experience"
+                      loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-item rv">
+            <summary class="project-row">
+              <div class="thumb-col">
+                <div class="frame">
+                  <div class="frame-media">
+                    <img src="assets/gtc_poster_thumb.jpg" alt="GTC 2016 award-winning poster: GPU-based pedestrian detection for autonomous driving" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>GPU-based Pedestrian Detection for Autonomous Driving</h3>
+                <p>
+                  A GPU-accelerated, vision-based pedestrian detector built
+                  for autonomous driving, developed with the Computer Vision
+                  Center research group and running on the NVIDIA DrivePX platform.
+                  The work won the Best Poster Award at NVIDIA's GPU Technology Conference (GTC) 2016.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">CUDA</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">ADAS</span>
+                  <span class="tag">DrivePX</span>
+                </div>
+              </div>
+              <span class="project-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="project-panel">
+              <div class="panel-details">
+                <p>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S1877050916309395" target="_blank" rel="noopener">
+                    Original paper ↗
+                  </a>
+                  &nbsp;·&nbsp;
+                  <a href="assets/gtc_poster.pdf" target="_blank" rel="noopener">
+                    View full poster (PDF) ↗
+                  </a>
+                  &nbsp;·&nbsp;
+                  <a href="https://webs.uab.cat/hpca4se/en/news/two-uab-students-awarded-gtc-2016-silicon-valley/" target="_blank" rel="noopener">
+                    Two UAB students awarded at GTC 2016 ↗
+                  </a>
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-item rv">
+            <summary class="project-row">
+              <div class="thumb-col">
+                <div class="frame">
+                  <div class="frame-media">
+                    <img src="assets/host_device_mem_model.png" alt="FriendlyDevicePtr host/device memory model" class="thumb-contain" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>FriendlyDevicePtr</h3>
+                <p>
+                  A lightweight, header-only C++ class that frees CUDA
+                  device memory automatically, following the same ownership
+                  model as <code>std::unique_ptr</code>. GPU memory is
+                  allocated on construction and freed automatically when the
+                  pointer goes out of scope. I've used this
+                  header file in some of my CUDA projects.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">C++</span>
+                  <span class="tag">CUDA</span>
+                  <span class="tag">GPU</span>
+                </div>
+              </div>
+              <span class="project-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="project-panel">
+              <div class="code-compare">
+                <div class="code-compare-item">
+                  <p class="code-compare-label">Without FriendlyDevicePtr</p>
+                  <pre class="code-block"><code>std::vector&lt;float&gt; a;
+a.reserve(n)
+{
+    float* d_a;
+    cudaMalloc(&amp;d_a, a.size() * sizeof(float));
+    cudaMemcpy(d_a,
+               a.data(),
+               a.size() * sizeof(float),
+               cudaMemcpyHostToDevice);
+    ...
+    kernel&lt;&lt;&lt;grid, block&gt;&gt;&gt;(d_a, a.size());
+    cudaMemcpy(a.data(),
+               d_a,
+               a.size() * sizeof(float),
+               cudaMemcpyDeviceToHost);
+    ...
+    cudaFree(d_a); // must remember on every exit path
+}
+processVector(a);
+...</code></pre>
+                </div>
+                <div class="code-compare-item is-after">
+                  <p class="code-compare-label">With FriendlyDevicePtr</p>
+                  <pre class="code-block"><code>std::vector&lt;float&gt; a;
+a.reserve(n)
+{
+    dptr::DevicePtr&lt;float&gt; d_a(a.data(), a.size());
+    ...
+    kernel&lt;&lt;&lt;grid, block&gt;&gt;&gt;(d_a.get(), d_a.getCount());
+    cudaMemcpy(a.data(),
+               d_a.get(),
+               d_a.getBytes(),
+               cudaMemcpyDeviceToHost);
+    ...
+} // GPU memory is freed at scope exit
+processVector(a);
+...</code></pre>
+                </div>
+              </div>
+              <div class="panel-details">
+                <p>
+                  <a href="https://github.com/vcampmany/FriendlyDevicePtr" target="_blank" rel="noopener">View the source on GitHub ↗</a>
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="project-item rv">
+            <summary class="project-row">
+              <div class="thumb-col">
+                <div class="frame">
+                  <div class="frame-media">
+                    <img class="thumb-contain" src="assets/conan.png" alt="Conan C/C++ package manager logo" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Contributions to Conan C/C++ Package Manager</h3>
+                <p>
+                  Contributed two recipes to ConanCenter, the community
+                  index for the Conan C/C++ package manager:
+                  <strong>jsonnet</strong> and <strong>libe57format</strong>,
+                  both used as dependencies in some of my other projects and
+                  work. Each recipe packages the library's build so it can
+                  be pulled into any Conan-based C++ project with a single
+                  dependency line.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">C++</span>
+                  <span class="tag">Conan</span>
+                  <span class="tag">Package Manager</span>
+                </div>
+              </div>
+              <span class="project-chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="project-panel">
+              <div class="panel-details">
+                <p>
+                  <a href="https://github.com/conan-io/conan-center-index/pull/6099" target="_blank" rel="noopener">jsonnet recipe PR ↗</a>
+                  &nbsp;·&nbsp;
+                  <a href="https://github.com/conan-io/conan-center-index/pull/6679" target="_blank" rel="noopener">libe57format recipe PR ↗</a>
+                  &nbsp;·&nbsp;
+                  <a href="https://conan.io/" target="_blank" rel="noopener">conan.io ↗</a>
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="section-alt">
+      <div class="container">
+        <div class="section-header rv">
+          <p class="section-eyebrow">Outside of work</p>
+          <h2>About me</h2>
+        </div>
+
+        <p class="bio rv">
+          When I'm not building software, I enjoy spending time riding bikes, 
+          bikepacking in nature and taking photographs. I also have a small 
+          workshop where I repair vintage bikes, my latest build is a late 1990s
+          Checker Pig.
+        </p>
+
+        <div class="photo-grid rv">
+          <div class="frame">
+            <div class="frame-media">
+              <img src="assets/photo_sample.jpg" alt="Dusk view of the mountains from a cabin porch" loading="lazy" />
+            </div>
+          </div>
+          <div class="frame">
+            <div class="frame-media">
+              <img src="assets/bike.jpg" alt="Gravel bike resting at a mountaintop lookout at sunrise" loading="lazy" />
+            </div>
+          </div>
+          <div class="frame">
+            <div class="frame-media">
+              <img src="assets/photo3.jpg" alt="Ski touring group ascending a snow slope" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <p class="photo-link rv">
+          <a href="https://the.fotoapp.co/vcampmany" target="_blank" rel="noopener">View more on fotoapp ↗</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p>© 2026 Victor Campmany. Built with plain HTML, CSS &amp; JS.</p>
+      <ul class="footer-links">
+        <li><a href="mailto:vcampmany@gmail.com">Email</a></li>
+        <li><a href="https://github.com/vcampmany" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/vcampmany1" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
