@@ -717,5 +717,15 @@ section {
 
   .topbar-inner {
     position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero-eyebrow {
+    margin: 0 0 24px;
+  }
+
+  .hero h1 {
+    line-height: 1.35;
   }
 }
